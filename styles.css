@@ -170,7 +170,7 @@ body.loading {
     margin-top: 200px; 
     display: block;
 }
-@media (max-width: 1800px) {
+@media (max-width: 1000px) {
     .navbar h1 {
         font-size: 30px;
     }
@@ -255,7 +255,7 @@ body.loading {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .navbar h1 {
         font-size: 18px;
     }
