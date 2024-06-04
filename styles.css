@@ -295,7 +295,7 @@ body.loading {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .navbar h1 {
         font-size: 15px;
     }
