@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
-
 body {
     margin: 0;
-    padding: 0;
     background-color: aliceblue;
     font-family: Arial, sans-serif;
 }
-
 .navbar {
     overflow: hidden;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space out items with space between */
+    align-items: center; 
+    justify-content: space-between;
     list-style-type: none;
-    padding: 0 20px; /* Add some padding for better spacing */
+    padding: 0 20px; 
     margin-left: 5px;
     background-color: rgba(0, 102, 255, 0.479);
     border-radius: 15px;
@@ -22,7 +19,7 @@ body {
 .navbar h1 {
     color: orange;
     font-size: 30px;
-    margin: 0; /* Remove any default margin */
+    margin: 0; 
 }
 
 .navbar .nav-links {
@@ -40,6 +37,7 @@ body {
     font-size: 20px;
     margin-top: 20px;
 }
+
 
 .section {
     display: flex;
@@ -62,31 +60,28 @@ body {
     margin: 20px;
     height: 500px; 
 }
-
-.left-heading h2 {
+.left-heading h2{
     font-size: 50px;
     text-align: center;
 }
-
-.left-imgs {
+.left-imgs{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.left-imgs img {
+.left-imgs img{
     padding: 10px;
     border-radius: 20px;
     width: auto;
     height: 250px;
-    transition: all;
+    transition:all;
+}
+.left-imgs img:hover{
+    transform:scale(1.1);
 }
 
-.left-imgs img:hover {
-    transform: scale(1.1);
-}
 
-#footer {
+#footer{
     position: relative;
     height: 550px;
     padding: 10px;
@@ -95,9 +90,8 @@ body {
     background-image: url(https://img.freepik.com/premium-photo/stone-podium-table-top-outdoors-blur-green-forest-plant-nature-background_653449-7164.jpg);
     background-size: cover;
     font-family: "Seymour One", sans-serif;
-    font-weight: 400;
+  font-weight: 400;
 }
-
 .right-2, .left-2 {
     position: absolute;
     top: 40%;
@@ -108,11 +102,11 @@ body {
 .right-2 {
     right: 0; 
 }
-
-.right-2 p {
+.right-2 p{
     font-size: 50px;
     margin-right: 200px;
 }
+
 
 .left-2 {
     left: 0; 
@@ -127,23 +121,21 @@ body {
     height: 100px; 
     background-color: transparent;
 }
-
-#aboutleft-2 p {
+#aboutleft-2 p{
     font-size: 50px;
     padding: 10px;
     text-align: center;
 }
-
 .center {
-    width: 100%;
-    height: 90%;
+    width: 50%;
+    height: 100%;
     text-align: center;
-    background-image: url('C:/Users/Sudha/Downloads/pngwing.com.png'); 
+    background-image: url('pngwing.com.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     padding: 20px; 
-}
+  }
 
 #movingImage {
     max-width: 100%;
@@ -155,6 +147,7 @@ body {
     transition: all 1s ease;
     z-index: 10;
 }
+
 
 .loading-overlay {
     position: fixed;
@@ -168,37 +161,34 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 body.loading {
     overflow: hidden; 
 }
-
-.loading-overlay h1 {
+.loading-overlay h1{
     color: white;
     text-align: center;
     margin-top: 200px; 
     display: block;
 }
-
-/* Media queries for different screen sizes */
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
     .navbar h1 {
         font-size: 30px;
     }
-
     .navbar a {
         padding: 10px;
         font-size: 20px;
+        font-size: 100px;
     }
-
     #home {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
     } 
-
-    #movingImage {
-        height: 50%;
-        margin-top: 200px;
+    .left, .right {
+        width: 100%;
+    }
+    #movingImage{
+        height: 65%;
+        margin-top: 20px;
     }
 
     .left-heading h2 {
@@ -215,61 +205,14 @@ body.loading {
 
     #about {
         margin: 10px;
-        height: 700px;
-        margin-top: 100px;
-        margin-bottom: 200px;
+        height: auto;
+    }
+    #footer{
+        height: 900px;
     }
 
-    #footer {
-        height: 450px;
-        margin: 0;
-    }
 }
 
-@media (max-width: 900px) {
-    .navbar h1 {
-        font-size: 30px;
-    }
-
-    .navbar a {
-        padding: 10px;
-        font-size: 20px;
-    }
-
-    #home {
-        flex-direction: row;
-        text-align: center;
-    } 
-
-    #movingImage {
-        height: 70%;
-        margin-top: 100px;
-    }
-
-    .left-heading h2 {
-        font-size: 45px;
-    }
-
-    .left-imgs img {
-        height: 200px;
-    }
-
-    .right-2 p, .left-2 p {
-        font-size: 45px;
-    }
-
-    #about {
-        margin: 10px;
-        height: 700px;
-        margin-top: 100px;
-        margin-bottom: 200px;
-    }
-
-    #footer {
-        height: 500px;
-        margin: 0;
-    }
-}
 
 @media (max-width: 768px) {
     .navbar h1 {
@@ -280,17 +223,14 @@ body.loading {
         padding: 10px;
         font-size: 20px;
     }
-
     #home {
         flex-direction: column;
         text-align: center;
     } 
-
     .left, .right {
         width: 100%;
     }
-
-    #movingImage {
+    #movingImage{
         height: 50%;
         margin-top: 70px;
     }
@@ -322,8 +262,7 @@ body.loading {
         padding: 6px;
         font-size: 15px;
     }
-
-    #movingImage {
+    #movingImage{
         height: 40%;
         margin-top: 110px;
     }
@@ -345,14 +284,14 @@ body.loading {
     }
 
     #footer {
-        height: 380px;
-        margin: 0;
+        height: 800px;
     }
 
     .right-2, .left-2 {
         top: 30%;
     }
 }
+
 
 @media (max-width: 400px) {
     .navbar h1 {
@@ -363,8 +302,7 @@ body.loading {
         padding: 6px;
         font-size: 10px;
     }
-
-    #movingImage {
+    #movingImage{
         height: 30%;
         margin-top: 20px;
     }
@@ -386,14 +324,9 @@ body.loading {
     }
 
     #footer {
-        background-image: url(https://img.pikbest.com/wp/202345/stage-renderings-stone-and-wood-podium-3d-rendered-for-product-promotion_9609241.jpg!f305cw);
-        background-size: cover;
-        background-repeat: no-repeat;
         height: 500px;
-        margin: 0;
     }
-
-    .right-2, .left-2 {
+right-2, .left-2 {
         top: 25%;
     }
 }
