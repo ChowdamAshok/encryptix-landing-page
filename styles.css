@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 body {
     margin: 0;
+    padding: 0;
     background-color: aliceblue;
     font-family: Arial, sans-serif;
 }
@@ -327,6 +328,7 @@ body.loading {
 
     #footer {
         height: 500px;
+        margin: 0;
     }
 
     .right-2, .left-2 {
